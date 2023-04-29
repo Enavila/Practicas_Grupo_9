@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: white;
+    font-family: roboto;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 8% 92%;
+    background-color: #0f0f0f;
+}
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100vh;
+}
+
+#burgerMenu{
+    margin: 15px 0px 35px 0px;
+}
+
+aside div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
