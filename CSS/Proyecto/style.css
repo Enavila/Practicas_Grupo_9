@@ -1,3 +1,7 @@
+:root{
+    --colorOscuro: #343434;
+}
+
 *{
     box-sizing: border-box;
     top: 0px;
@@ -52,14 +56,15 @@ nav{
 }
 
 #logo{
-    width: 135px;
-    height: 60px;
+    width: 125px;
+    height: 50px;
 }
 
 #busqueda{
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 10px;
 }
 
 #busqueda div{
@@ -70,7 +75,7 @@ nav{
 }
 
 #busqueda input{
-    width: 400px;
+    width: 500px;
     height: 35px;
     padding-left: 10px;
     border-radius: 25px 0px 0px 25px;
@@ -82,7 +87,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #232223;
+    background-color: var(--colorOscuro);
     border-color: rgb(74, 74, 74);
     border-style: solid;
     border-width: 0px 0px 0px 1px;
@@ -101,7 +106,7 @@ nav{
     align-items: center;
     height: 40px;
     width: 40px;
-    background-color: #232223;
+    background-color: var(--colorOscuro);
     border-radius: 50%;
 }
 
@@ -120,3 +125,29 @@ nav{
     width: 35px;
 }
 
+#recomendaciones{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+#recomendaciones button{
+    color: white;
+    background-color: var(--colorOscuro);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+#cuadriculaVideos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 13px;
+    margin-top: 15px;
+}
+
+.imgVideo{
+    width: 300px;
+    border-radius: 10px;
+}
