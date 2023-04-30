@@ -2,6 +2,7 @@
     box-sizing: border-box;
     top: 0px;
     margin: 0px;
+    /* Estilos de texto general */
     font-size: 15px;
     color: white;
     font-family: roboto;
@@ -10,20 +11,31 @@
 
 body{
     display: grid;
-    grid-template-columns: 8% 92%;
+    grid-template-columns: 5% 95%;
     background-color: #0f0f0f;
 }
 
+.iconos{
+    width: 24px;
+}
 
 aside{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
     height: 100vh;
 }
 
+aside div a{
+    font-size: 0.7rem;
+}
+
+aside div img{
+    width: 30px;
+}
+
 #burgerMenu{
-    margin: 15px 0px 35px 0px;
+    margin: 15px 0px 20px 0px;
 }
 
 aside div{
@@ -36,4 +48,48 @@ aside div{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 150px;
+    height: 70px;
+}
+
+#busqueda{
+    display: flex;
+    align-items: center;
+}
+
+#busqueda div{
+    display: flex;
+    align-items: center;
+    border: #232223 solid 2px;
+    border-radius: 25px;
+}
+
+#busqueda input{
+    width: 400px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 25px 0px 0px 25px;
+    border: none;
+    background-color: transparent;
+}
+
+#lupa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232223;
+    border-color: rgb(74, 74, 74);
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-radius: 0px 25px 25px 0px;
+    height: 39px;
+    width: 60px;
+}
+
+#lupa img{
+    width: 60px;
 }
