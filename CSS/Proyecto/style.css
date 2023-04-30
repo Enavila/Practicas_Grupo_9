@@ -52,13 +52,14 @@ nav{
 }
 
 #logo{
-    width: 150px;
-    height: 70px;
+    width: 135px;
+    height: 60px;
 }
 
 #busqueda{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 #busqueda div{
@@ -93,3 +94,29 @@ nav{
 #lupa img{
     width: 60px;
 }
+
+#microfono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #232223;
+    border-radius: 50%;
+}
+
+#microfono img{
+    width: 40px;
+}
+
+#acciones{
+    display: flex;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+    gap: 15px;
+}
+
+#acciones a img{
+    width: 35px;
+}
+
