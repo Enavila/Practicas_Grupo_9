@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Z-Index</title>
+    </head>
+    <style>
+        body{
+            display: flex; 
+            justify-content: start;
+            flex-direction: column;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        body img{
+            width: 300px;
+        }
+
+        #img1{
+            z-index: 1;
+            margin-top: 50px;
+        }
+
+        #img2{
+            z-index: 2;
+            margin-top: -120px;
+        }
+
+        #img3{
+            z-index: 3;
+            margin-top: -240px;
+        }
+    </style>
+
+    <body>
+        <img id="img1" src="https://i.blogs.es/0e51a7/pc-2/450_1000.webp" alt="">
+        <img id="img2" src="https://www.punchtechnology.co.uk/wp-content/uploads/2022/11/Be-Quiet-Pure-Base-500FX-Gaming-Chassis-Front-Angle-with-RGB-Lighting-Close-600x600.jpg" alt="">
+        <img id="img3" src="https://i.blogs.es/ca32d0/pcbuild2/1366_2000.jpg" alt="">
+    </body>
+</html>

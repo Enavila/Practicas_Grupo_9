@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#caja1{
+    width: 400px;
+    height: 200px;
+    /* La propiedad overflow tiene diferentes valores
+    estos son: hidden, visible, scroll, auto. */
+    overflow: auto;
+}
+
+/* 
+#caja1::-webkit-scrollbar{
+    background-color: transparent;
+} */
