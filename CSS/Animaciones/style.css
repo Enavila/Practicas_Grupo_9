@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: roboto;
+    font-size: 10px;
 }
 
 body{
@@ -34,4 +35,50 @@ h1{
     border-radius: 50%;
     margin-bottom: 20px;
     cursor: pointer;
+    font-size: 2.3rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+
+.caja1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(117, 53, 177);
+}
+
+
+.caja2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(13, 150, 17);
+}
+
+.caja3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(226, 98, 43);
 }
