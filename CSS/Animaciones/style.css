@@ -122,7 +122,7 @@ p{
     cursor: pointer;
     background-color: rgb(13, 150, 17);
 
-    animation: animacion2 100ms 2000ms infinite cubic-bezier(1,1.94,.25,1.46);
+    animation: animacion2 4.5s 2000ms infinite cubic-bezier(1,1.94,.25,1.46);
 }
 
 .caja2:hover{
@@ -140,6 +140,15 @@ p{
     font-size: 20px;
     cursor: pointer;
     background-color: rgb(226, 98, 43);
+
+    animation: 
+        animacion1 1s 500ms infinite alternate ease,
+        animacion2 10s 3500ms infinite ease-in-out,
+        animacion3 4.5s infinite alternate;
+}
+
+.caja3:hover{
+    animation-play-state: paused;
 }
 
 
@@ -154,7 +163,7 @@ p{
 }
 
 
-@keyframes animacion2 {
+@keyframes animacion2{
     0%{
         transform: translate(-300px,0px);
     }
@@ -163,5 +172,23 @@ p{
     }
     100%{
         transform: translate(-300px,0px);
+    }
+}
+
+@keyframes animacion3{
+    0%{
+        border-radius: 50% 30% 50% 30%;
+    }
+    25%{
+        border-radius: 30% 50% 30% 50%;
+    }
+    50%{
+        border-radius: 50% 30% 50% 30%;
+    }
+    75%{
+        border-radius: 30% 50% 30% 50%;
+    }
+    100%{
+        border-radius: 50% 30% 50% 30%;
     }
 }
