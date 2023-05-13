@@ -141,6 +141,7 @@ p{
     cursor: pointer;
     background-color: rgb(226, 98, 43);
 
+
     animation: 
         animacion1 1s 500ms infinite alternate ease,
         animacion2 10s 3500ms infinite ease-in-out,
