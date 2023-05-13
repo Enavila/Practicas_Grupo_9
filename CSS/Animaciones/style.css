@@ -53,7 +53,60 @@ p{
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+    
+
+
+    /* 1)
+        animation-name(nombre de la animacion)
+        Indicar el nombre de animacion y crear regla de @keyframes con from y to,
+        NO SE EJECUTA HASTA... indicar la duracion y la funcion de tiempo*/
+    animation-name: animacion1;
+
+    /* 2)
+        Duracion(s o ms), indica el tiempo que tomara desde el inicio al fin */
+    animation-duration: 1.7s;
+
+    /* 3)
+        funcion de tiempo, es la velocidad que tendra la animacion
+        Presionar ctrl + clic en el link para ir a: https://cubic-bezier.com/ */
+    animation-timing-function: linear;
+
+    /* 4)
+        Contador de repeticiones/Iteraciones (numero o infinite)*/
+    animation-iteration-count: infinite;
+
+    /* 5)
+        Se define el color de fondo de la caja para mostrar al detener 
+        la animacion, sino queda transparente*/
     background-color: rgb(117, 53, 177);
+
+    /* 6) 
+        animation-play-state(paused o running)
+        define el estado de la animacion*/
+    animation-play-state: running;
+
+    /* 7)
+        animation-direction(normal/reverse/alternate/alternatereverse)
+            -normal: realiza la animacion de principio a fin y se repite en caso se ser un loop.
+            -reverse: realiza la animacion de fin a principio y se repite en caso se ser un loop.
+            -alternate: realiza la animacion de inicio a fin y de fin a inicio, esto se repite en caso 
+            se ser un loop.
+            -alternate-reverse: realiza la animacion de fin a inicio y de inicio a fin, esto se repite en caso.
+        permite elejir como se recorrera la animacion, 
+        por defecto es de inicio a fin, pero se puede colocar de inicio a fin y de vuelta
+    */
+    animation-direction: alternate;
+
+
+    /* 8)
+        animation-delay(s,ms) 
+        permite indicar el tiempo de retraso de una animacion
+    */
+    animation-delay: 3500ms;
+}
+
+.caja1:hover{
+    animation-play-state: paused;
 }
 
 
@@ -68,6 +121,12 @@ p{
     font-size: 20px;
     cursor: pointer;
     background-color: rgb(13, 150, 17);
+
+    animation: animacion2 100ms 2000ms infinite cubic-bezier(1,1.94,.25,1.46);
+}
+
+.caja2:hover{
+    animation-play-state: paused;
 }
 
 .caja3{
@@ -81,4 +140,28 @@ p{
     font-size: 20px;
     cursor: pointer;
     background-color: rgb(226, 98, 43);
+}
+
+
+
+@keyframes animacion1{
+    from{
+        background-color: rgb(212, 68, 7);
+    }
+    to{
+        background-color: rgb(0, 34, 255);
+    }
+}
+
+
+@keyframes animacion2 {
+    0%{
+        transform: translate(-300px,0px);
+    }
+    50%{
+        transform: translate(300px,0px);
+    }
+    100%{
+        transform: translate(-300px,0px);
+    }
 }
