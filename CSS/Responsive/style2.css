@@ -1,0 +1,31 @@
+*{
+    color: aliceblue;
+    top: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#container{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.caja{  
+    background-color: rgb(69, 57, 41);
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+}
+
+button{
+    display: none;
+    background-color: brown;
+    padding: 15px;
+    padding-inline: 30px;
+    border-radius: 5px;
+}
