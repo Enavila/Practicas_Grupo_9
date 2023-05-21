@@ -43,34 +43,118 @@
             </div>
         </section>
 
+
+        <!-- 
+            La metodología BEM (Block Element Modifier), también conocida como Block Element Modifier, es un enfoque 
+            utilizado en el desarrollo web para organizar y estructurar el código CSS. BEM se basa en el principio de 
+            que los componentes de una página web se dividen en bloques, elementos y modificadores.
+
+            Bloques: Son componentes independientes y reutilizables de una página web. Pueden ser grandes secciones como 
+            encabezados, navegación, pies de página, o componentes más pequeños como botones, formularios, etc.
+
+            Elementos: Son partes de un bloque y están estrechamente relacionados con él. Los elementos no tienen sentido o 
+            funcionalidad fuera del bloque al que pertenecen. Se nombran usando una notación de un o dos guiones bajos (_).
+
+            Modificadores: Son clases que se utilizan para cambiar la apariencia o el comportamiento de un bloque o elemento. 
+            Los modificadores se nombran usando una notación de uno o dos guiones (-). Permiten crear variaciones de un bloque o 
+            elemento sin tener que escribir nuevo código CSS.
+
+            La estructura de nombres en BEM se basa en la idea de que los nombres de clase deben ser descriptivos y autónomos, 
+            evitando conflictos y facilitando la legibilidad y mantenibilidad del código. Por ejemplo, un bloque de encabezado 
+            podría tener la clase "header", un elemento dentro del encabezado podría tener la clase "header_logo" y un 
+            modificador para cambiar el color de fondo del encabezado podría tener la clase "header-dark".
+        -->
         <section class="contenedor">
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #1</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #1
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #2</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #2
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #3</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #3
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #4</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #4
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #5</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #5
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #6</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #6
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #7</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #7
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #8</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #8
+                    </span>
+                </p>
             </div>
             <div class="contenedor_box">
-                <p class="contenedor_box_parrafo">Caja #9</p>
+                <p class="contenedor_box_parrafo">
+                    Caja
+                    <span class="contenedor_box_parrafo-span">
+                        #9
+                    </span>
+                </p>
             </div>
+        </section>
+
+
+
+        <!-- extend -->
+        <section id="sectionPadre">
+            <!-- Este parrafo tendra estilos solo de color -->
+            <p id="sectionPadre_hijo1">Parrafo que extiende estilos N° 1</p>
+            <!-- Este parrafo obtendra los estilos del anterior sumando un fondo de color -->
+            <p id="sectionPadre_hijo2">Parrafo que extiende estilos N° 2</p>
+            <!-- Este parrafo obtendra los estilos del anterior sumando una familia de letra distinta -->
+            <p id="sectionPadre_hijo3">Parrafo que extiende estilos N° 3</p>
+            <!-- Este parrafo obtendra los estilos del anterior sumando paddin y border radius -->
+            <p id="sectionPadre_hijo4">Parrafo que extiende estilos N° 4</p>
+            <!-- Este parrafo obtendra los estilos del anterior sumando un borde blanco la pseudoclase :hover -->
+            <p id="sectionPadre_hijo5">Parrafo que extiende estilos N° 5</p>
+            <!-- Este parrafo obtendra los estilos del anterior sumando un tamaño de letra -->
+            <p id="sectionPadre_hijo6">Parrafo que extiende estilos N° 6</p>
         </section>
     </body>
 </html>

@@ -1,0 +1,102 @@
+$grisRespuesta: #222327
+$negroRespuesta: #131314
+$azulAnclaHover: #61AEFA
+$azulAnclaNormal: #4097ED
+$gris: #3b3b3b7d
+$gris2: #5d5c5c
+$grisHover: #151514
+
+@mixin orientacion($display:flex, $direction:null, $justify:null, $align:null, $columns: null, $place: null)
+    display: $display
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+    grid-template-columns: $columns
+    place-content: $place
+
+*
+    box-sizing: border-box
+    top: 0
+    margin: 0px
+    font-size: 15px
+    color: white
+    font-family: 'Open Sans', sans-serif
+
+body
+    @include orientacion(flex, column)
+    width: 100%
+    height: 100vh
+    background-color: #000101
+
+
+// Menu de navegacion superior
+
+nav
+    @include orientacion(flex,null , space-between)
+    padding: 8px 20px 8px 20px
+
+.filaCajaNav
+    @include orientacion(flex, null, null, center)
+    width: 120px
+    gap: 10px
+
+#menu
+    @include orientacion(flex, null, center, center)
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    padding: 4px
+
+#menu:hover
+    background-color: $gris
+
+#logo
+    height: 22px
+
+#apps
+    @include orientacion(flex, null, center, center)
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    padding: 4px
+
+#apps:hover
+    background-color: $gris
+
+#perfil
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    padding: 4px
+
+#perfil:hover
+    background-color: $gris
+
+// Caja del bloque principal (2 columnas)
+
+main
+    @include orientacion(grid, null, null, null, 13% 87%)
+    width: 100%
+    height: 100%
+
+aside
+    @include orientacion(flex, column)
+    width: 100%
+    height: 100%
+    font-weight: 600
+
+.asideCajaSuperior
+    @include orientacion(flex, column)
+    #disable
+        margin-top: 5px
+        p, span
+            color: $gris2
+    &_Fila
+        display: flex
+        width: 100%
+        gap: 16px
+        padding: 17px 40px 17px 22px
+    &_Fila:hover
+        background-color: $gris
+        border-radius: 0px 30px 30px 0px
+        

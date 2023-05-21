@@ -28,6 +28,9 @@ $degradado: radial-gradient(#5cc048, #083705)
 
 // Anidamiento
 body
+    display: flex
+    flex-direction: column
+    gap: 100px
     background: $degradado
     width: 100%
     height: 100vh
@@ -99,3 +102,76 @@ body
 h1
     color: $colorAmarilloOscuro
     font-size: 3.5rem
+
+
+
+/*& Hace referencia a el selector padre 
+    en este caso & = .contenedor*/
+
+/*& Hace referencia a el selector padre 
+    en este caso & = .contenedor_box*/
+
+
+.contenedor
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    gap: 10px
+    place-items: center
+    width: 100%
+    height: 800px
+    margin-top: 25px
+    &_box // &_box = .contenedor_box
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #0c5f88
+        width: 300px
+        height: 300px
+        &_parrafo // &_parrafo = .contenedor_box_parrafo
+            color: white
+            font-size: 2rem
+            &-span // &_span = .contenedor_box_parrafo_span
+                color: darkblue
+                font-size: 2rem
+                font-family: roboto
+                font-weight: 900
+
+
+// la regla @extend se utiliza para crear una relación de herencia entre dos o más selectores CSS. 
+// Permite que un selector herede los estilos de otro selector, lo que evita la duplicación de código 
+// y promueve la reutilización.
+
+
+#sectionPadre
+    display: flex
+    justify-content: center
+    gap: 20px
+    width: 100%
+    height: 300px
+    background-color: #423a2b
+    padding: 100px 
+    &_hijo1
+        color: greenyellow
+    &_hijo2
+        @extend #sectionPadre_hijo1
+        background-color: black
+    &_hijo3
+        @extend #sectionPadre_hijo2
+        font-family: arial
+    &_hijo4
+        @extend #sectionPadre_hijo3
+        padding: 10px
+        border-radius: 8px
+    &_hijo5
+        @extend #sectionPadre_hijo4
+        border: white solid 2px
+    &_hijo5:hover
+        color: black
+        background-color: greenyellow
+        border: black solid 2px
+    &_hijo5:active
+        background-color: #39023f
+        color: #ddb204
+    &_hijo6
+        @extend #sectionPadre_hijo5
+        font-size: 2.2rem
