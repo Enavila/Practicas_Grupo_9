@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL@24,400,0..1;48,600,0">
         <title>Clon - Bard</title>
     </head>
     <body>
@@ -85,19 +86,18 @@
             <!-- Bloque central -->
             <section>
                 <!-- Caja superior del bloque central -->
-                <div>
+                <div class="chatboxSup">
                     <!-- Bloque de la Izquierda / Icono -->
                     <div>
-                        <img src="" alt="Estrella">
+                        <img id="estrella" _ngcontent-ng-c1183763081="" alt="" class="logo" src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif">
                     </div>
 
                     <!-- Bloque de la Derecha / Respuesta -->
-                    <div>
+                    <div id="respuesta">
                         <p>
                             I’m Bard, your creative and helpful collaborator. I have limitations and won’t always get it right, but your feedback will help me improve.
-                            <br> <!-- Salto de linea -->
-                            Not sure where to start? You can try:
-                        </p>   
+                        </p> 
+                        <p>Not sure where to start? You can try:</p>  
                         <a href="">Write some lyrics for a heartbreak anthem titled “Lovesick” </a>
                         <a href=""> I want to write a novel. How can I get started? </a>
                         <a href=""> Give me some ideas to surprise my movie-loving friend on their birthday </a>
@@ -105,16 +105,18 @@
                 </div>
 
                 <!-- Caja Inferior del bloque central -->
-                <div>
-                    <div>
-                        <div>
-                            <input type="text">
-                            <img src="" alt="Microfono">
+                <div id="cajaInferiorSection" >
+                    <div id="cajaInferiorSection_prompt">
+                        <div id="cajaInferiorSection_prompt_input">
+                            <input type="text" placeholder="Enter a prompt here">
+                            <span class="material-symbols-outlined">
+                                mic
+                            </span>
                         </div>
-                        <img src="" alt="Buscar">
+                        <mat-icon _ngcontent-ng-c3245916530="" role="img" class="mat-icon notranslate google-symbols mat-icon-no-color ng-star-inserted" aria-hidden="true" data-mat-icon-type="font">send_spark</mat-icon>
                     </div>
 
-                    <p>Bard may display inaccurate or offensive information that doesn’t represent Google’s views.</p>
+                    <p id="warning">Bard may display inaccurate or offensive information that doesn’t represent Google’s views.</p>
                 </div>
             </section>
         </main>
