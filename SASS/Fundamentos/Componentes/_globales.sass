@@ -1,0 +1,100 @@
+// Variables
+
+// Asi definiamos variables en CSS
+// :root{
+//     --miVariable: 15px;    
+// }
+
+
+// Asi definimos variables con SASS
+$colorBlanco: white
+$colorAmarilloOscuro: #312b01
+$degradado: radial-gradient(#5cc048, #083705)
+
+/*
+    asd
+    asd
+    asd
+    asd
+    asd
+    */
+
+
+*
+    box-sizing: border-box
+    top: 0
+    margin: 0px
+    font-size: 10px
+
+// Anidamiento
+body
+    display: flex
+    flex-direction: column
+    gap: 100px
+    background: $degradado
+    width: 100%
+    height: 100vh
+    // Selector de div Anidado, equivale a: body .caja
+    .caja
+        background-color: yellow
+        // Selector de parrafo Anidado, equivale a: body .caja #parrafo
+        #parrafo
+            color: red
+            font-size: 2rem
+
+
+// Mixins
+
+// Como definir mixins sin parámetros
+
+@mixin fondoYFamiliaLetra1()
+    background-color: #48c0c0
+    font-family: arial
+    width: 50%
+
+@mixin fondoYFamiliaLetra2()
+    background-color: #0c5f88
+    font-family: roboto
+
+@mixin fondoYFamiliaLetra3()
+    background-color: #5109bd
+    font-family: console
+
+@mixin fondoYFamiliaLetra4()
+    background-color: #883e01
+    font-family: 'Times New Roman'
+
+
+// Como definir mixins con parámetros
+@mixin fondoYFamiliaLetraEspecial($colorFondo:cyan, $tipografia:arial ,$ancho:50vw, $alto:null, $tamanoLetra: null)
+    background-color: $colorFondo
+    font-family: $tipografia
+    width: $ancho
+    height: $alto
+    font-size: $tamanoLetra
+
+
+
+@mixin cuadriculaCentrada($columnas: 1fr, $posicionamiento: null)
+    display: grid
+    grid-template-columns: $columnas
+    place-content: $posicionamiento
+    p
+        font-size: 1.6rem
+
+
+
+// Como usar mixin con parametros
+#contenedorMixin
+    #cajaMixin1
+        @include fondoYFamiliaLetraEspecial()
+        @include cuadriculaCentrada()
+    #cajaMixin2
+        @include fondoYFamiliaLetraEspecial(red, "arial", 35vmax, 200px, 2rem)
+        @include cuadriculaCentrada(repeat(2,1fr),end)
+    #cajaMixin3
+        @include fondoYFamiliaLetraEspecial(#1959a8,"times new roman")
+        @include cuadriculaCentrada(repeat(3,1fr),center)
+    #cajaMixin4
+        @include fondoYFamiliaLetraEspecial(purple, console, 50%, 180px, 2.5rem)
+        @include cuadriculaCentrada(repeat(4,1fr))

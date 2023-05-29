@@ -1,0 +1,25 @@
+// For 
+@for $contador from 1 to 10
+    .elemento-#{$contador}
+        width: 100px * $contador
+        height: 150px * $contador
+        background-color: orange
+        margin: 3.5px 0px 3.5px 150px
+
+// Each
+/*
+    Loops
+
+    each es una directiva que permite iterar (recorrer) sobre una lista y aplicar un conjunto
+    de declaraciones de estilo a cada elemento de la lista.
+    */
+
+
+$colores: red,blue,orange,purple,yellow,gray,skyblue,greenyellow,pink,aqua
+
+// Esta linea se lee: Por cada elemento de la lista "colores" se va a realizar el codigo indicado.
+@each $elementoDeLista in $colores
+    // Este es el codigo que se realizara por cada elemento de la lista "colores"
+    .parrafo_#{$elementoDeLista}
+        // la sintaxis de #{} representa una concatenacion, es decir, una unificacion de valores.
+        color: $elementoDeLista

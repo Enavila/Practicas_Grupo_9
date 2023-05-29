@@ -1,0 +1,23 @@
+// Estructuras de control: Condicionales
+
+// if: Ejecuta una instrucción si la condición es verdadera
+// if-else: en caso de que el bloque if no se cumpla, else if valua una condicion y la ejecuta si es verdadera
+// else: Ejecuta el bloque alernativo en caso de que la condicion no se cumpla
+
+$tipografia: 'diego'
+
+
+.condicionales
+    font-size: 2.5rem
+    @if $tipografia == "roboto" // Esta linea se lee: si tipografia es "roboto" entonces se ejecuta el bloque
+        font-family: $tipografia
+        background-color: red
+    @else if $tipografia == "Brush Script MT" // Esta linea se lee: de lo contrario, si tipografia es "arial" entonces se ejecuta este bloque
+        font-family: $tipografia
+        background-color: pink
+    @else if $tipografia == "consolas" // Esta linea se lee: de lo contrario, si tipografia es "verdana" entonces se ejecuta este bloque
+        font-family: $tipografia
+        background-color: gold
+    @else // Esta linea se lee: si nada de lo anterior se cumple, entonces se ejecuta este bloque
+        font-family: Arial
+        background-color: blue

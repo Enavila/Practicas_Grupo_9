@@ -1,0 +1,32 @@
+/* 
+    Una función es un bloque de código que realiza una tarea específica cuando se llama o se invoca. 
+    Las funciones se utilizan para organizar y modularizar el código, ya que permiten agrupar un conjunto 
+    de instrucciones y reutilizarlas en diferentes partes de un programa.
+
+    Las funciones pueden recibir parámetros (también llamados argumentos) que son valores que se pasan a la 
+    función al momento de llamarla. Estos parámetros permiten que la función acepte datos variables y los 
+    utilice en su ejecución.
+
+    Una función también puede devolver un valor, conocido como valor de retorno. 
+    Este valor es el resultado de la ejecución de la función y puede ser utilizado o asignado a una variable en 
+    el programa principal.
+    
+    */
+
+
+// Ejemplo de Each usando Funciones
+$listaEstaciones: otono, invierno, primavera, verano
+$coloresEstaciones: gray, skyblue, green, orange
+
+@each $valorListaEstaciones in $listaEstaciones
+    .temporada_#{$valorListaEstaciones}
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 50px
+        font-size: 2.5rem
+        // funciones empleadas:
+        // nth($lista, $indice): obtiene el valor de un indice especifica
+        // index($lista, $valor): retorna el indice de un valor en una lista
+
+        background-color: nth($coloresEstaciones, index($listaEstaciones, $valorListaEstaciones))

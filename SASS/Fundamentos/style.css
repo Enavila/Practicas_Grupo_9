@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  asd
  *  asd
  *  asd
@@ -147,4 +148,166 @@ h1 {
 }
 #sectionPadre_hijo6 {
   font-size: 2.2rem;
+}
+
+.condicionales {
+  font-size: 2.5rem;
+  font-family: Arial;
+  background-color: blue;
+}
+
+.elemento-1 {
+  width: 100px;
+  height: 150px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-2 {
+  width: 200px;
+  height: 300px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-3 {
+  width: 300px;
+  height: 450px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-4 {
+  width: 400px;
+  height: 600px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-5 {
+  width: 500px;
+  height: 750px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-6 {
+  width: 600px;
+  height: 900px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-7 {
+  width: 700px;
+  height: 1050px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-8 {
+  width: 800px;
+  height: 1200px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+.elemento-9 {
+  width: 900px;
+  height: 1350px;
+  background-color: orange;
+  margin: 3.5px 0px 3.5px 150px;
+}
+
+/*  Loops
+ *
+ *  each es una directiva que permite iterar (recorrer) sobre una lista y aplicar un conjunto
+ *  de declaraciones de estilo a cada elemento de la lista.
+ *  */
+.parrafo_red {
+  color: red;
+}
+
+.parrafo_blue {
+  color: blue;
+}
+
+.parrafo_orange {
+  color: orange;
+}
+
+.parrafo_purple {
+  color: purple;
+}
+
+.parrafo_yellow {
+  color: yellow;
+}
+
+.parrafo_gray {
+  color: gray;
+}
+
+.parrafo_skyblue {
+  color: skyblue;
+}
+
+.parrafo_greenyellow {
+  color: greenyellow;
+}
+
+.parrafo_pink {
+  color: pink;
+}
+
+.parrafo_aqua {
+  color: aqua;
+}
+
+/*  Una función es un bloque de código que realiza una tarea específica cuando se llama o se invoca. 
+ *  Las funciones se utilizan para organizar y modularizar el código, ya que permiten agrupar un conjunto 
+ *  de instrucciones y reutilizarlas en diferentes partes de un programa.
+ *
+ *  Las funciones pueden recibir parámetros (también llamados argumentos) que son valores que se pasan a la 
+ *  función al momento de llamarla. Estos parámetros permiten que la función acepte datos variables y los 
+ *  utilice en su ejecución.
+ *
+ *  Una función también puede devolver un valor, conocido como valor de retorno. 
+ *  Este valor es el resultado de la ejecución de la función y puede ser utilizado o asignado a una variable en 
+ *  el programa principal.
+ *  */
+.temporada_otono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: gray;
+}
+
+.temporada_invierno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: skyblue;
+}
+
+.temporada_primavera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: green;
+}
+
+.temporada_verano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: orange;
 }/*# sourceMappingURL=style.css.map */

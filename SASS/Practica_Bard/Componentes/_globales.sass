@@ -1,0 +1,30 @@
+$grisRespuesta: #222327
+$negroRespuesta: #131314
+$azulAnclaHover: #61AEFA
+$azulAnclaNormal: #4097ED
+$gris: #3b3b3b7d
+$gris2: #5d5c5c
+$grisHover: #151514
+
+@mixin orientacion($display:flex, $direction:null, $justify:null, $align:null, $columns: null, $place: null, $gap: null)
+    display: $display
+    flex-direction: $direction
+    justify-content: $justify
+    align-items: $align
+    grid-template-columns: $columns
+    place-content: $place
+    gap: $gap
+
+*
+    box-sizing: border-box
+    top: 0
+    margin: 0px
+    font-size: 15px
+    color: white
+    font-family: 'Open Sans', sans-serif
+
+body
+    @include orientacion(flex, column)
+    width: 100%
+    height: 100vh
+    background-color: #000101

@@ -1,0 +1,36 @@
+h1
+    color: $colorAmarilloOscuro
+    font-size: 3.5rem
+
+
+
+/*& Hace referencia a el selector padre 
+    en este caso & = .contenedor*/
+
+/*& Hace referencia a el selector padre 
+    en este caso & = .contenedor_box*/
+
+
+.contenedor
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    gap: 10px
+    place-items: center
+    width: 100%
+    height: 800px
+    margin-top: 25px
+    &_box // &_box = .contenedor_box
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #0c5f88
+        width: 300px
+        height: 300px
+        &_parrafo // &_parrafo = .contenedor_box_parrafo
+            color: white
+            font-size: 2rem
+            &-span // &_span = .contenedor_box_parrafo_span
+                color: darkblue
+                font-size: 2rem
+                font-family: roboto
+                font-weight: 900

@@ -1,0 +1,38 @@
+// la regla @extend se utiliza para crear una relación de herencia entre dos o más selectores CSS. 
+// Permite que un selector herede los estilos de otro selector, lo que evita la duplicación de código 
+// y promueve la reutilización.
+
+
+#sectionPadre
+    display: flex
+    justify-content: center
+    gap: 20px
+    width: 100%
+    height: 300px
+    background-color: #423a2b
+    padding: 100px 
+    &_hijo1
+        color: greenyellow
+    &_hijo2
+        @extend #sectionPadre_hijo1
+        background-color: black
+    &_hijo3
+        @extend #sectionPadre_hijo2
+        font-family: arial
+    &_hijo4
+        @extend #sectionPadre_hijo3
+        padding: 10px
+        border-radius: 8px
+    &_hijo5
+        @extend #sectionPadre_hijo4
+        border: white solid 2px
+    &_hijo5:hover
+        color: black
+        background-color: greenyellow
+        border: black solid 2px
+    &_hijo5:active
+        background-color: #39023f
+        color: #ddb204
+    &_hijo6
+        @extend #sectionPadre_hijo5
+        font-size: 2.2rem

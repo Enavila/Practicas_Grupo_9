@@ -1,0 +1,42 @@
+// Menu de navegacion superior
+
+nav
+    @include orientacion(flex,null , space-between)
+    padding: 8px 20px 8px 20px
+
+.filaCajaNav
+    @include orientacion(flex, null, null, center)
+    width: 120px
+    gap: 10px
+
+#menu
+    @include orientacion(flex, null, center, center)
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    padding: 4px
+
+#menu:hover
+    background-color: $gris
+
+#logo
+    height: 22px
+
+#apps
+    @include orientacion(flex, null, center, center)
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    padding: 4px
+
+#apps:hover
+    background-color: $gris
+
+#perfil
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    padding: 4px
+
+#perfil:hover
+    background-color: $gris
