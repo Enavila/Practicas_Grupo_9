@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style-AOS.css">
+        <!--Hoja de estilos insertada por CDN-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Libreria AOS (Animar al desplazar)</title>
+    </head>
+
+    <body>
+        <span id="tope"></span>
+        <nav>
+            <a href="#desvanecer">
+                Fade
+            </a>
+            <a href="#voltear">
+                Flip
+            </a>
+            <a href="#zoom">
+                Zoom
+            </a>
+            <a href="#configuraciones">
+                Config. Extras
+            </a>
+        </nav>
+
+        <div id="inicio">
+            <div class="inicioBox" data-aos="flip-up" data-aos-delay="400" data-aos-duration="1500">
+                <h1 id="titulo">Aprendiendo a usar AOS</h1>
+            </div>
+            <div id="scroll" data-aos="flip-down" data-aos-offset="40" data-aos-duration="1000">
+                <a href="#subir">
+                    <p>Desplazar hacia abajo</p>
+                    <lord-icon
+                    id="icon"
+                        src="https://cdn.lordicon.com/gdevhieu.json"
+                        trigger="loop"
+                        delay="1500"
+                        colors="outline:#121331,primary:#000000,secondary:#f0f0f0"
+                        stroke="20"
+                        scale="60">
+                    </lord-icon>
+                </a>
+            </div>
+        </div>
+
+        <!-- Efecto Fade / Desvanecer -->
+        <div class="encabezado" data-aos="fade-left">
+            <h1>Efecto Fade / Desvanecer</h1>
+        </div>
+        <section id="desvanecer">
+            <div data-aos="fade-down"> 
+                <p>data-aos="fade-down"</p>
+            </div>
+            <div data-aos="fade-up"> 
+                <p>data-aos="fade-up"</p>
+            </div>
+            <div data-aos="fade-left"> 
+                <p>data-aos="fade-left"</p>
+            </div>
+            <div data-aos="fade-right"> 
+                <p>data-aos="fade-right"</p>
+            </div>
+            <div data-aos="fade-up-right"> 
+                <p>data-aos="fade-up-right"</p>
+            </div>
+            <div data-aos="fade-up-left"> 
+                <p>data-aos="fade-up-left"</p>
+            </div>
+            <div data-aos="fade-down-right"> 
+                <p>data-aos="fade-down-right"</p>
+            </div>
+            <div data-aos="fade-down-left"> 
+                <p>data-aos="fade-down-left"</p>
+            </div>
+        </section>
+
+        <!--Efecto Flip / Voltear-->
+        <div  class="encabezado" data-aos="flip-up">
+            <h1>Efecto Flip / Voltear</h1>
+        </div>
+        <section id="voltear">
+            <div data-aos="flip-left">
+                <p>data-aos="flip-left"</p>
+            </div>
+            <div data-aos="flip-right">
+                <p>data-aos="flip-right"</p>
+            </div>
+            <div data-aos="flip-up">
+                <p>data-aos="flip-up"</p>
+            </div>
+            <div data-aos="flip-down">
+                <p>data-aos="flip-down"</p>
+            </div>
+        </section>
+
+        <!-- Efecto Zoom / Acercar -->
+        <div  class="encabezado" data-aos="zoom-in">
+            <h1>Efecto Zoom / Acercar</h1>
+        </div>
+        <section id="zoom">
+            <div data-aos="zoom-in">
+                <p>data-aos="zoom-in"</p>
+            </div>
+            <div data-aos="zoom-in-up">
+                <p>data-aos="zoom-in-up"</p>
+            </div>
+            <div data-aos="zoom-in-down">
+                <p>data-aos="zoom-in-down"</p>
+            </div>
+            <div data-aos="zoom-in-left">
+                <p>data-aos="zoom-in-left"</p>
+            </div>
+            <div data-aos="zoom-in-right">
+                <p>data-aos="zoom-in-right"</p>
+            </div>
+            <div data-aos="zoom-out">
+                <p>data-aos="zoom-out"</p>
+            </div>
+            <div data-aos="zoom-out-up">
+                <p>data-aos="zoom-out-up"</p>
+            </div>
+            <div data-aos="zoom-out-down">
+                <p>data-aos="zoom-out-down"</p>
+            </div>
+            <div data-aos="zoom-out-left">
+                <p>data-aos="zoom-out-left"</p>
+            </div>
+            <div data-aos="zoom-out-right">
+                <p>data-aos="zoom-out-right"</p>
+            </div>
+        </section>
+
+        <!-- Configuraciones adicionales -->
+        <div  class="encabezado" data-aos="flip-up" data-aos-duration="1500">
+            <h1>Configuraciones adicionales</h1>
+        </div>
+        <section id="configuraciones">
+            <div data-aos="fade-left" data-aos-duration="3000">
+                <p>data-aos="fade-left"</p> 
+                <p>data-aos-duration="3000"</p>
+            </div>
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                <p>data-aos="fade-right"</p>
+                <p>data-aos-easing="linear"</p>
+                <p>data-aos-duration="1500"</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <p>data-aos="zoom-in"</p>
+                <p>data-aos-offset="300"</p>
+                <p>data-aos-easing="ease-in-sine"</p>
+            </div>
+            <div data-aos="fade-left"  data-aos-offset="350" data-aos-duration="800">
+                <p>data-aos="fade-left"</p>
+                <p>data-aos-offset="350"</p>
+                <p>data-aos-duration="800"</p>
+            </div>
+            <div data-aos="fade-up-right" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="200">
+                <p>data-aos="fade-up-right"</p>
+                <p>data-aos-easing="ease-in-back"</p>
+                <p>data-aos-delay="300"</p>
+                <p>data-aos-offset="200"</p>
+            </div>
+            <div data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-offset="200" data-aos-duration="1500">
+                <p>data-aos="flip-down"</p>
+                <p>data-aos-easing="ease-out-cubic"</p>
+                <p>data-aos-delay="500"</p>
+                <p>data-aos-offset="200"</p>
+                <p>data-aos-duration="1500"</p>
+            </div>
+        </section>
+
+        <!-- Ancha de retorno al inicio -->
+        <a id="subir" href="#tope" data-aos="flip-left" data-aos-duration="1500">
+            <lord-icon
+                src="https://cdn.lordicon.com/qsacmnwj.json"
+                trigger="loop"
+                colors="outline:#121331,primary:#e5d1fa,secondary:#c69cf4"
+                stroke="30"
+                scale="50"
+                style="width:100px;height:100px;">
+            </lord-icon>
+            Volver al inicio
+        </a>
+    </body>
+
+    <!--Script de AOS insertado por CDN-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Iniciar Script-->
+    <script>AOS.init();</script>
+
+    <!--Iconos adicionales-->
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</html>

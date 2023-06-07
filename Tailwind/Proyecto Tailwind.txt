@@ -1,0 +1,16 @@
+Proyecto de Tailwind
+
+Elabora un clon de netflix basado en el documento PDF que esta en el repositorio
+usando 99% tailwind (CSS solo para el selector universal y las tipografias).
+
+Puntos importantes: 
+    - Superposicion de degradado
+    - Alineacion de cajas
+    - Tipografias
+    - Anclas
+
+Fecha de entrega: 11/06/23
+
+Opcional:
+    - Realiza la pagina de Login
+    - Añade animaciones con AOS
