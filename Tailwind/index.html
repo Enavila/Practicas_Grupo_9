@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Importamos tailwind desde un CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
         <title>Tailwind</title>
     </head>
 
@@ -18,12 +21,12 @@
     </style>
 
     <body class="bg-sky-600">
-        <nav class="flex h-[32px] bg-sky-900 justify-between py-[5px] px-[8px] bg-gradient-to-l from-black to-black/0">
+        <nav class="flex h-[50px] bg-sky-900 justify-between py-[10px] px-[12px] bg-gradient-to-l from-black to-black/0">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/2560px-Tailwind_CSS_logo.svg.png" alt="Logo">
             
             <input class="pl-1.5 rounded-[4px] w-[570px] focus:bg-slate-800 hover:border-solid hover:border-red-400 hover:border-2" type="text" placeholder="Buscar...">
             
-            <div>
+            <div class="flex gap-4">
                 <a class="text-white font-bold text-[17px] hover:text-sky-400" href="https://tailwindcss.com">
                     Home
                 </a>
@@ -38,11 +41,16 @@
             </div>
         </nav>
         
-        <main class="mt-10">
-            <!-- <h1>Tailwind</h1>
-            <section>
+        <main class="flex flex-col items-center w-full mt-10">
+            <h1 
+                style="font-family: 'Dancing Script', cursive; font-weight: 700;" 
+                class="font-bold text-[50px] bg-slate-800 text-white rounded-2xl px-8">
+                    Tailwind
+            </h1>
+
+            <section class="w-full">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis accusamus consequatur exercitationem ab voluptas? Aperiam animi nulla, deleniti vitae qui sunt soluta cumque labore earum, temporibus exercitationem eligendi expedita voluptatem.</p>
-            </section> -->
+            </section>
 
             <section class="grid grid-cols-4 gap-4 place-items-center">
                 <img class="w-[350px]" src="https://viget.imgix.net/tailwind-on-gray.png?auto=format%2Ccompress&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1&q=90&w=1200&s=d45cb3d7233ce6e0b46f131c660d5adb" alt="Imagen">
