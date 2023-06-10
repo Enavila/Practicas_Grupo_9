@@ -1,0 +1,38 @@
+Lenguajes:
+	HTML 6
+	CSS 6
+	*JavaScript 13
+	+TypeScript 3
+	*Python 8
+	SQL 4
+	*PHP 7
+
+Herramientas
+!	GIT/GitHub 6
+	SASS 2
+	Tailwind 4
+--	Wordpress 2
+--	React 7
+-	MongoDB 5
+	Figma 2
+--	Laravel 2
+	Express 7
+	Mongoose 3
+	node.js 6
+-----	XAMPP 2
+
+Librerias
+!	Axios 5
+!	Faker 2
+	AOS 2
+	Animate.css 2
+~	pywhatkit 3
+
+
+
+Leyenda:
+-  peso
+* Lenguaje de programacion
++ superset
+! Gran herramienta
+~ Herramienta util pero engorrosa
