@@ -107,7 +107,7 @@ function deduccion(){
 
 /* Practica para realizar en casa:
 
-    Realiza el alagoritmo de un cajero automatico, que permita:
+    Realiza con recursividad, el alagoritmo de un cajero automatico, que permita:
 
     1: Ver el saldo actual.
     2: realizar retiros.
