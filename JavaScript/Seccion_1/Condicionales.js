@@ -17,9 +17,9 @@ if(numero % 2 == 0){
 //if-else (Si/ De lo contrario)
 let edad = prompt("Ingresa tu edad")
 if(edad >= 18){
-    alert("Es mayor de edad")
+    alert("Es mayor de edad");
 }else{
-    alert("Es menor de edad")
+    alert("Es menor de edad");
 }
 
 
