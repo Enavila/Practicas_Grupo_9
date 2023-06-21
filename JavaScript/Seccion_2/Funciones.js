@@ -10,11 +10,17 @@
     para definir las instrucciones que se ejecutarán cuando la función sea llamada.
 
     Sintaxis
-        Palabra reservada (Function (F. Declarativa) var (F. de Expresión)).
-        Nombre de Funcion (Para las F. de Expresión se suelen dejar como anonimas). 
-        Parentesis () donde se indican los parametros.
-        Llaves {} que contienen el proceso a realizar.
+        1- Palabra reservada (Function (F. Declarativa) let/const (F. de Expresión)).
+        2- Nombre de Funcion (Para las F. de Expresión se suelen dejar como anonimas). 
+        3- Parentesis () donde se indican los parametros.
+        4- Llaves {} que contienen el proceso a realizar.
         IMPORTANTE: cada sentencia dentro de una funcion debe finalizar con ;
+
+    Tipos de funciones:
+        - Funciones de expresión
+        - Funciones declarativas
+        - Funciones anonimas
+        - Funciones de flecha (arrow functions)
 */
 
 
@@ -25,6 +31,10 @@ function saludar(){
 
 // Llamando la funcion
 saludar();
+saludar();
+saludar();
+
+
 
 
 // Funcion con parametros
@@ -40,6 +50,39 @@ saludar2("Genesis", "Piñango");
 saludar2("Luis", "Zambrano");
 saludar2("Ismael", "Zorrilla");
 saludar2("Diego", "Rodriguez");
+
+
+// Ejemplo 2
+function procesadorDeJugo(fruta1, fruta2){
+    return(`Ahora tengo jugo de ${fruta1} con ${fruta2}`);
+};
+
+console.log(procesadorDeJugo("Manzana", "Pera"));
+console.log(procesadorDeJugo("Mango", "Guayaba"));
+console.log(procesadorDeJugo("Fresa", "Naranja"));
+console.log(procesadorDeJugo("JavaScript", "HTML"));
+
+
+let frutaUsuario1 = prompt("Ingresa una fruta para el jugo");
+let frutaUsuario2 = prompt("Ingresa otra fruta para el jugo");
+
+
+// Ejemplo de uso de condicional if-else.
+if(frutaUsuario1 == "Mango"){
+    alert(procesadorDeJugo(frutaUsuario1, frutaUsuario2));
+}else{
+    alert("No se puede hacer jugo que no sea de manzana con otra fruta");
+}
+
+
+// Ejemplo de uso de Operador ternario (Condicional).
+(frutaUsuario1 == "Mango") 
+    ? alert(procesadorDeJugo(frutaUsuario1, frutaUsuario2))
+    : alert(procesadorDeJugo(frutaUsuario1, frutaUsuario2))
+
+
+
+
 
 
 

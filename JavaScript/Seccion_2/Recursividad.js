@@ -125,3 +125,59 @@ function deduccion(){
 
     Tip: si usas ternario tu codigo no funcionara mejor, pero tendra mejores practicas y mas optimizacion en rendimiento.
 */
+
+
+let saldoUsuario = 5000;
+let opcion;
+menu();
+
+function menu(){
+    opcion = prompt(`
+    Ingrese la opcion de su preferencia:
+    1: Ver el saldo actual.
+    2: Realizar retiros.
+    3: Realizar depositos.
+    4: Realizar transferencia.
+    otro: Cerrar el cajero.`);
+}
+
+switch(opcion){
+    case "1":
+        verSaldo();
+        menu();
+        break;
+    case "2":
+        console.log("hola");
+        // retirar();
+        // menu();
+        break;
+    case "3":
+        depositar();
+        menu();
+        break;
+    case "4":
+        transferir();
+        menu();
+        break;
+    default: 
+        alert("Opcion no valida");
+}
+
+function depositar(){
+    let montoDeposito = prompt("Ingrese el monto a depositar");
+    saldoUsuario += montoDeposito;
+}
+function retirar(){
+    let montoRetiro = prompt("Ingrese el monto a retirar");
+    saldoUsuario -= montoRetiro;
+}
+function transferir(){
+    let cuentaDestino = prompt("Ingrese la cuenta destino");
+    let monto = prompt("Ingrese el monto a transferir");
+    saldoUsuario -= monto;
+    alert(`Transferencia exitosa a la cuenta ${cuentaDestino}, tu saldo actual es: ${saldoUsuario}`);
+}
+
+function verSaldo(){
+    alert(`Tu saldo actual es: ${saldoUsuario}`);
+}
