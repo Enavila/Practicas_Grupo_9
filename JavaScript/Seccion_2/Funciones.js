@@ -21,6 +21,10 @@
         - Funciones declarativas
         - Funciones anonimas
         - Funciones de flecha (arrow functions)
+        
+        Subtipos:
+            - Funciones con retorno
+            - Funciones sin retorno
 */
 
 
