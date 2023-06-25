@@ -284,15 +284,141 @@ console.log(indexOfAntonio); // Retorna el indice: 8
 
 
 
-//fill: Rellena el array con el elemento indicado desde un índice inicial hasta una posicion
+//fill: Rellena el array ORIGINAL con el elemento indicado desde un índice inicial hasta una posicion
 // antes del indice final indicado.
 // Ejemplo: array.fill(elementoNuevo, posicionDeInicio, posicionFinal)
 
-
 let clientes = ["pago","no pago","pago","no pago","no pago","no pago","no pago","no pago","no pago"];
 
-let pago = clientes.fill("pago", 3, 9);
+clientes.fill("pago", 3, 9); // Modificacion desde el indice 3 al 8
+clientes.fill("pago", 1, 2); // Modificacion desde el indice 1 al 1
 
-console.log(pago);
+console.log(clientes);
 
-let pago2 = pago.fill("pago", 1, 2);
+
+// Ejemplo 2:
+let compra = ["🧃","🧁","🥑","🥦","🥕","🥩","🍞"];
+
+//Como me gusta mucho el helado, voy reemplazar "🥑","🥦","🥕" y "🥩" por "🍦".
+compra.fill("🍦", 2, 6);
+console.log(compra);
+
+
+
+
+//every(todos): devuelve true SI TODOS los elementos del array CUMPLEN con la función proporcionada,
+//de lo contrario retorna false.
+
+//Ejemplo 1 (¿Todo es par?)
+let listaNumeros = [1,3,5,7,9,11,13,15,17];
+
+//Se evalua si TODOS los elementos del array son pares
+let todosPares = listaNumeros.every(
+    function(numero){
+        return (numero % 2) === 0;
+    }
+);
+
+console.log(todosPares);
+
+
+//Ejemplo 2 (¿Todo es impar?)
+
+//Se evalua si todos los elementos del array son impares
+let todosImpares = listaNumeros.every(
+    function (numero){
+        return (numero % 2) === 1;
+    }
+);
+
+console.log(todosImpares);
+
+
+//ejemplo 3 (¿Todo es carne?)
+let comida = ["🥩","🥩","🥩","🥩","🥩"];
+
+let todoCarne = comida.every(
+    function (elemento){
+        return elemento === "🥩"
+    }
+);
+
+console.log(todoCarne);
+
+
+
+//some(alguno): devuelve true SI ALGUNO de los elementos cumple con la funcion proporcionada,
+//de lo contrario devuelve false.
+
+
+let vegetales = ["🥦","🥕","🧅","🥬","🍫","🥔"];
+// let vegetales = ["🥦","🥕","🧅","🥬","🍆","🥔"];
+
+let algunoEsChocolate = vegetales.some(
+    function (elemento){
+        return elemento === "🍫";
+    }
+);
+
+console.log(algunoEsChocolate);
+
+
+
+
+//Ejemplo 2 (¿Alguno es el numero 2?)
+// const listaDeNumeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const listaDeNumeros2 = [1,"2", 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+
+const algunoEsDos = listaDeNumeros2.some(
+    function (numero){
+        return numero  === 2;
+    }
+);
+
+console.log(algunoEsDos);
+
+
+
+
+/*
+    map(): es una función que se utiliza para transformar los elementos de un arreglo y generar 
+    un nuevo arreglo con los resultados de dicha transformación.
+
+    Recibe como argumento una función de transformación que se aplica a cada elemento del arreglo original y puede 
+    realizar cualquier tipo de operación o cálculo sobre él.
+
+    Por ultimo, devuelve un nuevo arreglo con los resultados que retorna la función de transformación sobre cada elemento, 
+    en el mismo orden en que aparecen en el arreglo original.
+*/
+
+
+const numerosDeTabla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+// Utilizaremos la funcion/metodo map() para iterar sobre cada elemento dela lista numerosDeTabla.
+// A continuacion, incaramos entre sus parametros la funcion que queremos aplicar a cada elemento.
+
+// Solucion con una funcion declarada
+const tablaDeMultiplicacion = numerosDeTabla.map(
+    function tablaDeMultiplicar(numero){
+        return numero * 5;
+    }
+);
+
+
+// Solucion usando una funcion anonima
+const tablaDeMultiplicacion2 = numerosDeTabla.map(
+    function(numero){
+        return numero * 5;
+    }
+);
+
+// Solucion usando una funcion de flecha
+const tablaDeMultiplicacion3 = numerosDeTabla.map((numero)=> numero * 5);
+
+console.log(tablaDeMultiplicacion);
+console.log(tablaDeMultiplicacion2);
+console.log(tablaDeMultiplicacion3);
+
