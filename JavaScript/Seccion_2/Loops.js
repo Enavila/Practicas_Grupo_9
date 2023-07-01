@@ -153,10 +153,54 @@ while(contador <= 10){
 
 
 
+console.clear(); // Con esto lo que hacemos es limpiar todos los mensajes que se hayan mostrado en la consola anteriormente.
+
 
 // Ejemplo 2
-let respuesta = prompt("Desea continuar?");
+let respuesta = prompt("Desea repetir?");
 
 while(respuesta == "si"){
-    respuesta = prompt("Desea continuar?");
+    respuesta = prompt("Desea repetir?");
 }
+
+// Esto se leeria:
+
+// Mientras la respuesta sea si seguire preguntando si desea volver a ejecutar el codigo
+
+
+
+
+// Ejemplo 3
+
+//Tabla de multiplicar
+let variableContador = 1;
+let limite = 10;
+let numeroDeLaTabla = 5;
+
+while(variableContador <= limite){
+    console.log(`${variableContador} x ${numeroDeLaTabla} = ${variableContador * numeroDeLaTabla}`);
+    variableContador++
+}
+
+
+
+
+// do-while - Repite un bloque de código 1 vez, luego valida si se cumple la condición, si no se cumple, se repite el ciclo.
+
+/* 
+    hacer{
+        codigo a ejecutar
+    }mientras(condicion)
+*/
+
+
+// Ejemplo 1
+let opcion; 
+
+do{
+    opcion = prompt("¿Desea finalizar?");
+}while(opcion == "no");
+
+
+
+// Ejercicio: adapta el ejercicio del cajero automatico usando do-while.
