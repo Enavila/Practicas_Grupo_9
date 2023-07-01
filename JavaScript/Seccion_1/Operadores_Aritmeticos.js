@@ -25,7 +25,7 @@ console.log(10 / 2);
 
 
 
-//Incremento ++: le suna uno a su operando.
+//Incremento unitario ++: le suna uno a su operando.
 let numero = 5;
 console.log(numero);
 

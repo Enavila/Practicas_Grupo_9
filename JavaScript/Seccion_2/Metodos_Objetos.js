@@ -17,6 +17,9 @@ let persona = {
 };
 
 
+
+
+
 // Ver los valores de las propiedades(claves o keys) de un objeto
 console.log(persona.nombre);
 console.log(persona.apellido);
@@ -119,3 +122,127 @@ function activarMetodos2(){
 let informacion = activarMetodos2();
 
 console.log(informacion);
+
+
+
+
+// Otro ejemplo de un objeto con metodos
+let teclado = {
+    marca: "Logitech",
+    modelo: "K380",
+    precio: 1500,
+    colores: ["Blanco", "Negro", "Verde", "Azul"],
+    cantidadDeTeclas: 100,
+    alto: 50,
+    ancho: 20,
+    peso: 10,
+    detalles: function(){
+        console.log(`El teclado ${this.marca} ${this.modelo} tiene un precio de ${this.precio}$`);
+    },
+    enviarInformacion: function(){
+        console.log("se envio la informacion el precionar la tecla x");
+    }
+};
+
+
+console.log(teclado)
+console.log(teclado.detalles());
+
+
+
+
+
+// Algunos metodos que podemos emplear en los objetos.
+
+// keys(): Devuelve un array de las claves (propiedades) enumerables de un objeto.
+
+const propiedades = Object.keys(teclado);
+console.log( Object.keys(teclado) );
+
+
+
+
+// values(): Devuelve un array de los valores enumerables de un objeto.
+console.log( Object.values(teclado) );
+
+
+
+
+// assign(): Copia los valores de todas las propiedades enumerables de uno o más objetos fuente a un objeto destino.
+const objeto3 = Object.assign({},teclado, auto);
+console.log(objeto3);
+
+
+
+//  Ejemplo 2:
+let usuarioBrayan = {
+    nombre: "Brayan",
+    apellido: "Gamboa",
+    edad: 25,
+    pais: "Canada",
+    habilidades: ["HTML" ,"CSS" ,"JavaScript" ,"Python", "PHP", "TypeScript", "React", "Laravel"]
+}
+
+const rolAdministrador = {
+    añadir: function(){ 
+        return ("Se añadio un nuevo usuario") 
+    },
+    eliminar: function(){ 
+        return ("Se elimino un Usuario") 
+    },
+    editar: function(){ 
+        return ("Se edito Usuario") 
+    },
+    consultarById: function(){ 
+        return ("Se consulto un Usuario por ID")
+    },
+    consultarTodos: function(){
+        return ("Se consulto todos los Usuarios")
+    }
+}
+
+
+
+const usuarioBrayanAdministrador = Object.assign({},usuarioBrayan, rolAdministrador);
+console.log(usuarioBrayanAdministrador);
+
+console.log(usuarioBrayanAdministrador.nombre);
+console.log(usuarioBrayanAdministrador.eliminar());
+
+
+
+
+// hasOwnProperty(): Devuelve true si el objeto tiene una propiedad especificada.
+console.log( usuarioBrayanAdministrador.hasOwnProperty("consultarById") );
+console.log( usuarioBrayanAdministrador.hasOwnProperty("consultarByEmail") );
+
+
+
+
+
+// defineProperty(): Define una nueva propiedad directamente en un objeto o modifica una propiedad existente.
+
+Object.defineProperty(usuarioBrayanAdministrador, "consultarByEmail", {
+    value: function(){
+        return ("Se consulto un Usuario por Email");
+    },
+    writable: false,
+    enumerable: true
+});
+
+console.log(usuarioBrayanAdministrador.consultarByEmail());
+console.log(usuarioBrayanAdministrador);
+
+
+// Sin usar el metodo defineProperty()
+usuarioBrayanAdministrador.saludar = function(){ 
+    console.log("Hola Mundo"); 
+};
+
+console.log(usuarioBrayanAdministrador.status);
+usuarioBrayanAdministrador.saludar();
+
+
+usuarioBrayanAdministrador.status = "Conectado";
+console.log(usuarioBrayanAdministrador.status);
+console.log(usuarioBrayanAdministrador);
