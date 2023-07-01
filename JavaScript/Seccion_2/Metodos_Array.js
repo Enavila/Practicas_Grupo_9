@@ -120,8 +120,8 @@ let numerosPares = numeros.filter(
     function(numeros) {
     // Funcion de retorno booleana, donde se evalua si el numero es par, 
     // en caso positivo filter retorna el numero.
-        return numeros % 2 === 0;
-        //return numeros % 2 === 1;
+        // return numeros % 2 === 0;
+        return numeros % 2 === 1;
     }
 );
 
