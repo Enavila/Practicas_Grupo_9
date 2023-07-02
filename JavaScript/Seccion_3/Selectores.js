@@ -177,20 +177,44 @@ console.log(
 
 
 
+// elemento.innerHTML: Permite modificar el contenido de un elemento.
+document.getElementById("caja").innerHTML = `
+<h1>Esto es una caja</h1>
+<div class="font-bold">
+    <p>Esto es un parrafo creado con js</p>
+    <p>Esto es otro parrafo creado con js</p>
+</div>
+<button id="boton">Click</button>`;
+
+
+
+
 
 
 // document.createElement("nombre_de_etiqueta"): Permite crear un elemento (sin asignacion) en el DOM.
 
 // elemento.appendChild: agrega un nodo hijo a un elemento seleccionado.
 
-
+// Creamos un div y parrafo.
 let nuevoDiv = document.createElement("div");
 let nuevoParrafo = document.createElement("p");
+let nuevoParrafo2 = document.createElement("p");
 
+
+//  Asignamos el contenido al parrafo.
 nuevoParrafo.innerText = "Aprendiendo a usar Selectores en Lexpin";
+nuevoParrafo2.innerText = "Aprendiendo a usar Selectores con JavaScript en Lexpin";
 
 // Añadimos el parrafo al div que creamos.
 nuevoDiv.appendChild(nuevoParrafo);
+nuevoDiv.appendChild(nuevoParrafo2);
 
 // Añadimos el div que contiene ahora un parrafo al body.
 document.body.appendChild(nuevoDiv);
+
+
+
+
+
+// Eliminar un nodo(Elemento hijo).
+nuevoDiv.removeChild(nuevoParrafo);
