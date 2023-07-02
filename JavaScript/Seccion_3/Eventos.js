@@ -71,11 +71,27 @@ let miBoton2 = document.getElementById("boton2");
 // Asignacion de un escucha de evento.
 // elemento.addEventListener("tipo_de_evento", manejador_de_evento);
 
-function mostrartexto(){
-    console.log("Has pulsado el boton");
+// Funcion que se ejecuta cuando el mouse este sobre el elemento.
+function cambiarFondo1(){
+    // Elimino los estilos anteriores
+    document.body.classList.remove("from-sky-400", "to-sky-900")
+    
+    // Añado nuevos estilos
+    document.body.classList.add("from-yellow-400", "to-yellow-900");
 }
 
-miBoton2.addEventListener("click", mostrartexto);
+// Funcion que se ejecuta cuando el mouse salga del elemento.
+function cambiarFondo2(){
+    // Elimino los estilos anteriores
+    document.body.classList.remove("from-yellow-400", "to-yellow-900");
+
+    // Añado nuevos estilos
+    document.body.classList.add("from-sky-400", "to-sky-900")
+}
+
+// Añadimos las escuchas de evento.
+miBoton2.addEventListener("mouseover", cambiarFondo2);
+miBoton2.addEventListener("mouseleave", cambiarFondo1);
 
 
 // Seleccionamos los botones para Deshabilitar y Habilitar.
