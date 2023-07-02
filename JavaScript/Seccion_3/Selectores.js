@@ -37,6 +37,7 @@
 
 let miTitulo = document.getElementById("titulo");
 console.log(miTitulo);
+console.log(miTitulo.innerText);
 
 
 
