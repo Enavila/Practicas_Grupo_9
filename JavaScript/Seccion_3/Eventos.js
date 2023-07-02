@@ -57,7 +57,27 @@ function cambiarTexto2(){
 let miBoton = document.getElementById("boton");
 
 // Asignacion de un evento.
-miBoton.onmouseover = ()=> console.log("El mouse paso sobre el boton");
+miBoton.onclick = ()=> console.log("El mouse paso sobre el boton");
+
+
+
+/*
+    Algunos de los eventos mas usados por propiedades.
+    onfocus: Se activa cuando el elemento gana el foco.
+    onblur: Se activa cuando el elemento pierde el foco.
+    onclick: Se activa cuando el usuario hace clic sobre el elemento.
+    ondblclick: Se activa cuando el usuario hace doble clic sobre el elemento.
+    onmousedown: Se activa cuando el usuario presiona el botón del ratón en un elemento.
+    onmouseup: Se activa cuando el usuario libera el botón pulsado del ratón sobre un elemento.
+    onmouseover: Se activa cuando el usuario mantiene el puntero sobre un elemento.
+    onmouseout: Se activa cuando el usuario mueve el puntero fuera de un elemento.
+    onmousemove: Se activa cuando el usuario mueve el puntero del ratón sobre un elemento.
+    onkeydown: Se activa cuando el usuario presiona una tecla.
+    onkeyup: Se activa cuando el usuario libera la tecla.
+    onkeypress: Se activa cuando el usuario presiona una tecla y la mantiene pulsada.
+*/
+
+
 
 
 
@@ -109,7 +129,7 @@ miBoton4.addEventListener("click", ()=> miBoton2.addEventListener("click", mostr
 
 
 /* 
-    Esta es una lista de algunos de los eventos mas usados.
+    Algunos de los eventos mas usados por addEventListener.
     - focus: ocurre cuando el elemento gana el foco.
     - blur: Cuando el elemento pierde el foco.
     - click: ocurre cuando el usuario hace clic sobre el elemento.
