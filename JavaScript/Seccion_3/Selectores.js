@@ -44,4 +44,9 @@ console.log(miTitulo);
 
 // Seleccion de multiples elementos mediante tagName
 let parrafos = document.getElementsByTagName("p");
-console.log(parrafos);
+console.log(parrafos[0].innerText);
+console.log(parrafos[1].innerText);
+console.log(parrafos[2].innerText);
+console.log(parrafos[3].innerText);
+console.log(parrafos[4].innerText);
+console.log(parrafos[5].innerText);
