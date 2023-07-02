@@ -124,3 +124,18 @@ miTitulo.innerText = "Aprendiendo a usar Selectores con JavaScript en Lexpin"
 
 // Mostramos el texto interno del H1 DESPUES de reasignarlo
 console.log(miTitulo.innerText);
+
+
+
+// Ejemplo 2: Modificar el texto de un un parrafo en una lista de parrafos.
+misParrafos[4].innerText = "Aprendiendo a usar Selectores con JavaScript en Lexpin"
+
+
+
+
+
+// elemento.style: permite acceder y manipular las propiedades CSS del elemento seleccionado.
+
+misParrafos[4].style.color = "pink";
+misParrafos[4].style.fontSize = "20px";
+misParrafos[4].style.fontWeight = 900;
