@@ -136,6 +136,61 @@ misParrafos[4].innerText = "Aprendiendo a usar Selectores con JavaScript en Lexp
 
 // elemento.style: permite acceder y manipular las propiedades CSS del elemento seleccionado.
 
-misParrafos[4].style.color = "pink";
+misParrafos[4].style.color = "skyblue";
 misParrafos[4].style.fontSize = "20px";
 misParrafos[4].style.fontWeight = 900;
+
+
+
+
+
+
+// elemento.classList: Rermite hacer multiples acciones con la propiedad class, 
+// tales como: agregar(add), eliminar(remove) y verificar(contains) 
+// si el elemento seleccionado contiene las clases indicadas.
+
+// Añadimos una nueva clase al elemento seleccionado.
+misParrafos[4].classList.add("parrafoEspecial");
+
+
+// Verificamos si el elemento tiene la clase.
+console.log( 
+    misParrafos[4].classList.contains("parrafoEspecial") 
+        ? "El elemento contiene la clase parrafoEspecial" 
+        : "El elemento NO contiene la clase parrafoEspecial" 
+);
+
+
+// Eliminar una clase.
+misParrafos[4].classList.remove("parrafoEspecial");
+
+
+// Verificamos despues de eliminar si el elemento aun tiene la clase.
+console.log( 
+    misParrafos[4].classList.contains("parrafoEspecial") 
+        ? "El elemento contiene la clase parrafoEspecial" 
+        : "El elemento NO contiene la clase parrafoEspecial" 
+);
+
+
+
+
+
+
+
+
+// document.createElement("nombre_de_etiqueta"): Permite crear un elemento (sin asignacion) en el DOM.
+
+// elemento.appendChild: agrega un nodo hijo a un elemento seleccionado.
+
+
+let nuevoDiv = document.createElement("div");
+let nuevoParrafo = document.createElement("p");
+
+nuevoParrafo.innerText = "Aprendiendo a usar Selectores en Lexpin";
+
+// Añadimos el parrafo al div que creamos.
+nuevoDiv.appendChild(nuevoParrafo);
+
+// Añadimos el div que contiene ahora un parrafo al body.
+document.body.appendChild(nuevoDiv);
