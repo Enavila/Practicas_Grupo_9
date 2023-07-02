@@ -49,6 +49,8 @@ function cambiarTexto2(){
 
 
 
+
+
 // Ejemplo de un evento mediante Propiedades JavaScript - (en el archivo index2.html sobre el id="miBoton"):
 
 // Seleccionamos el elemento
@@ -69,9 +71,24 @@ let miBoton2 = document.getElementById("boton2");
 // Asignacion de un escucha de evento.
 // elemento.addEventListener("tipo_de_evento", manejador_de_evento);
 
+function mostrartexto(){
+    console.log("Has pulsado el boton");
+}
 
-miBoton2.addEventListener("click", ()=> console.log("Has pulsado el boton"));
+miBoton2.addEventListener("click", mostrartexto);
 
+
+// Seleccionamos los botones para Deshabilitar y Habilitar.
+let miBoton3 = document.getElementById("boton3");
+let miBoton4 = document.getElementById("boton4");
+
+// Asignamos la escucha estos botones.
+
+// Boton de Deshabilitar usando removeEventListener.
+miBoton3.addEventListener("click", ()=> miBoton2.removeEventListener("click", mostrartexto));
+
+// // Boton de Habilitar.
+miBoton4.addEventListener("click", ()=> miBoton2.addEventListener("click", mostrartexto));
 
 
 
