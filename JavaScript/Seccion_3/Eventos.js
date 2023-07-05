@@ -87,6 +87,7 @@ miBoton.onclick = ()=> console.log("El mouse paso sobre el boton");
 
 // Seleccionamos el boton 2
 let miBoton2 = document.getElementById("boton2");
+miBoton2.addEventListener("click", ()=> console.log("El mouse paso sobre el boton"));
 
 // Asignacion de un escucha de evento.
 // elemento.addEventListener("tipo_de_evento", manejador_de_evento);

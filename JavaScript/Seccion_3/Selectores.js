@@ -13,7 +13,6 @@
     .getElementsByTagName("div"): selecciona todos los elementos con un nombre de etiqueta específico.
 
     Sintaxis:
-
     La palabra reservada "document" hace referencia al objeto principal del DOM(Modelo de Objeto del Documento) que representa el 
     documento HTML actual en una página.
 
@@ -26,7 +25,6 @@
     document.getElementsByClassName("mi_clase");
     document.getElementsByTagName("div");
 
-}
 
     Los selectores se emplean junto a otros metodos para realizar diferentes acciones.
 */
@@ -92,7 +90,7 @@ if(miTitulo.getAttribute("class") === "text-lg text-slate-800 font-bold"){
     console.log("El elemento contiene las clases adecuadas");
 }else{
     console.log("El elemento NO contiene las clases adecuadas");
-}
+};
 
 
 
@@ -185,7 +183,6 @@ document.getElementById("caja").innerHTML = `
     <p>Esto es otro parrafo creado con js</p>
 </div>
 <button id="boton">Click</button>`;
-
 
 
 
